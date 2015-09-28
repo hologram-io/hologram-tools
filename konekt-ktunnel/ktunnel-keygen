@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import KonektKTunnel.keygen
+
+KonektKTunnel.keygen.main()
