@@ -8,7 +8,7 @@ Why is this better than simply opening up ports to the public Internet? Simple: 
 
 ### Installation
 
-1. Download the `konekt-tools` package (you may do so by clicking the `Download ZIP` button.
+1. Download the `konekt-tools` package (you may do so by clicking the `Download ZIP` button in GitHub).
 2. Unzip and browse to the `konekt-ktunnel` directory.
 3. Run `setup.py` (from your console, you can do this by running `python setup.py`).
 4. Dependencies should be installed automatically.
