@@ -4,7 +4,7 @@ This script will update the firmware on the ublox R410 module on the Hologram No
 
 To use:
 1) Clone this repository to a Raspberry Pi or other Linux machine with the Hologram Nova SDK installed. `git clone https://github.com/hologram-io/hologram-tools.git`
-2) cd into novaupdate directory
+2) cd into novaupdate directory inside the hologram-tools directory: `cd hologram-tools/novaupdate`
 3) `sudo pip install -r requirements.txt`
 4) `sudo python nova410update.py`
 
