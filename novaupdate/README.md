@@ -31,5 +31,5 @@ AT+CFUN=15
 ```
 
 ## Questions?
-Post on the [Hologram Forum](community.hologram.io)
+Post on the [Hologram Forum](https://community.hologram.io)
 
