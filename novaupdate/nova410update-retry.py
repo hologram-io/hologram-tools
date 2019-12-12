@@ -200,7 +200,7 @@ Do you wish to continue? (y/n) '''
         self.logger.warning('Sending file %s', filename)
         self.cloud.network.modem.serial_port.write_timeout = 20
         self.cloud.network.modem.command('+UFWUPD', '3', expected='ONGOING', timeout=60)
-        time.sleep(3)
+        time.sleep(5)
         fd = open(filename, 'rb')
         self.logger.warning('Writing file to serial port')
         modem = XMODEM(self.xgetc, self.xputc)
@@ -233,8 +233,9 @@ Do you wish to continue? (y/n) '''
                     stagepassed = True
                     break
                 elif res == 'STAGEFAIL':
-                    self.logger.warning('File failed. Trying next one in set')
-                    continue
+                    self.logger.warning('Stage may have worked. Attempting next stage')
+                    stagepassed = True
+                    break
                 elif res == 'PACKFAIL':
                     packageok = False
                     self.logger.warning('Package set failed. Trying next one')
