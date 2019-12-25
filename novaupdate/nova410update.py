@@ -114,7 +114,7 @@ related to profile selection and LED blinking. See hologram
 documentation for more information.
 The update may take up to 25 minutes to apply
 Do you wish to continue? (y/n) '''
-        reply = str(raw_input(prompt)).lower().strip()
+        reply = str(input(prompt)).lower().strip()
         if reply == 'y':
             return True
         return False
