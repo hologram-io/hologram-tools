@@ -1,2 +1,2 @@
-hologram-python~=0.8.2
+hologram-python~=0.9.0
 xmodem==0.4.5
